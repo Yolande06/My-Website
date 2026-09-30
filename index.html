@@ -3,26 +3,34 @@
   <Head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Personal website for Yolande featuring information about her interests and contact links."
-      />
+    <meta name="description" content="Personal website for Yolande featuring information about her interests and contact links.">
   <title>Yolande | My Website</title>
   <link rel="stylesheet" href="style.css" />
   </Head>
 
   <body>
     <header>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#interests">Interests</a>
-        <a href="#links">Links</a>
-        <a href="#contact">Contact</a>
+      <div class="navbar">
+        <h1>Yolande</h1>
+        <Button class="burger-menu" id="brugerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </Button>
+      </div>
+      
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <section>
+      <section id="home">
         <h1>Welcome to My Website</h1>
         <p>Hello! My name is Yolande.</p>
       </section>
@@ -70,5 +78,7 @@
     <footer>
       <p>(c) 2026 Yolande</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
