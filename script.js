@@ -1,5 +1,5 @@
 const burgerMenu = document.getElementById('burgerMenu');
-const navMenu = document.getElementByID('navMenu');
+const navMenu = document.getElementById('navMenu');
 
 burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('active');
@@ -9,6 +9,6 @@ burgerMenu.addEventListener('click', () => {
 // Close menu when a link is clicked
 document.querySelectorAll('.nav-menu a').forEach(link => {
   link.addEventListener('click', () => {
-    burgerMenu.classlist.remove('active');
+    burgerMenu.classList.remove('active');
   });
 });
