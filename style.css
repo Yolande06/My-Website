@@ -1,11 +1,15 @@
 :root{
-  --primary: #6366f1;
-  --secondary: #ec4899;
-  --accent: #3b82f6;
-  --text-dark: #1f2937;
-  --text-light: #ffffff;
-  --bg-light: #f3f4f6;
-  --bg-white: #ffffff;
+  --primary: #1a1a2e;
+  --secondary: #16c784;
+  --accent: #ff006e;
+
+  --ocean: #0099ff;
+  --sand: #ffd60a;
+  
+  --text-dark: #ffffff;
+  --text-light: #1a1a2e;
+  --bg-light: #0f3460;
+  --bg-white: #1a1a2e;
 }
   
 body {
@@ -20,7 +24,7 @@ body {
 header {
   background-color: var(--primary);
   padding: 20px;
-  color: white;
+  color: var(--text-light);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -51,7 +55,7 @@ header {
 .burger-menu span {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: var(--text-light);
   margin: 5px 0;
   border-radius: 3px;
   transition: 0.3s;
@@ -130,8 +134,12 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+h1 { 
+  background-color: var(--primary);
+}
+
 h2 {
-  color: #457b9d;
+  color: var(--secondary);
   margin-top: 30px;
   margin-bottom: 12px;
 }
@@ -152,14 +160,20 @@ li {
 }
 
 a {
-  color: var(--secondary);
+  color: var(--accent);
   text-decoration: none;
   font-weight: 600;
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--primary);
   text-decoration: underline;
+}
+
+/* Add a nice accent to sections */
+section {
+  border-left: 4px solid var(--secondary);
+  padding-left: 15px;
 }
 
 footer {
