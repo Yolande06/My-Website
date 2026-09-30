@@ -3,14 +3,17 @@ body {
   background-color: linear-gradient(to bottom; #f7f7f7, #eef4ff);
   color: #2d2d2d;
   margin: 0;
-  padding: 40px 20px;
+  padding: 0;
   line-height: 1.6;
 }
 
 header {
   background-color: #1d3557;
-  padding: 20px
+  padding: 20px;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar {
@@ -44,19 +47,19 @@ header {
   transition: 0.3s;
 }
 
-.burger-menu.active span:nith-child(1) {
+.burger-menu.active span:nth-child(1) {
   transform: rotate(45deg) translate(10px, 10px);
 }
 
-.burger-meny.active span:nth-child(2) {
-  opactiry: 0;
+.burger-menu.active span:nth-child(2) {
+  opacity: 0;
 }
 
 .burger-menu.active span:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-.nav-menu{
+.nav-menu {
   max-width: 800px;
   margin: 20px auto 0;
 }
@@ -83,7 +86,7 @@ header {
   text-decoration: underline;
 }
 
-/* Mobile Burger Menu*/
+/* Mobile Burger Menu - Smooth Slide Down Animation*/
 @media (max-width: 600px) {
   .burger-menu {
     display: flex;
@@ -92,12 +95,12 @@ header {
   .nav-menu {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.4s ease-out;
   }
 
   .nav-menu.active {
     max-height: 300px;
-    transition: max-height 0.3s ease-in;
+    transition: max-height 0.4s ease-in;
   }
 
   .nav-menu ul {
@@ -139,7 +142,7 @@ li {
 }
 
 a {
-  colour: #1d4ed8;
+  color: #1d4ed8;
   text-decoration: none;
   font-weight: 600;
 }
