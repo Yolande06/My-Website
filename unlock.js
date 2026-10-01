@@ -43,12 +43,15 @@ while (scrambledWord === correctWord) {
   scrambledWord = scrambleWord(correctWord);
 }
 
+
 // Show scrambled word
+
 document.getElementById("scrambled-word").textContent =
   scrambledWord.toUpperCase();
 
 
 // Check answer
+
 document.getElementById("unlock-button").addEventListener("click", function () {
 
   const answer = document
@@ -57,21 +60,30 @@ document.getElementById("unlock-button").addEventListener("click", function () {
     .toLowerCase()
     .trim();
 
-  const message = document.getElementById("message");
+  const message =
+    document.getElementById("message");
 
   if (answer === correctWord) {
 
-    message.textContent = "✓ Correct! Welcome!";
+    message.textContent =
+      "✓ Correct! Welcome!";
 
-    sessionStorage.setItem("galleryUnlocked", "true");
+    sessionStorage.setItem(
+      "galleryUnlocked",
+      "true"
+    );
 
     setTimeout(function () {
-      window.location.href = "index.html";
+
+      window.location.href =
+        "index.html";
+
     }, 500);
 
   } else {
 
-    message.textContent = "❌ Incorrect. Try again!";
+    message.textContent =
+      "❌ Incorrect. Try again!";
 
   }
 
@@ -79,10 +91,15 @@ document.getElementById("unlock-button").addEventListener("click", function () {
 
 
 // Allow Enter key
+
 document.getElementById("answer").addEventListener("keydown", function(event) {
 
   if (event.key === "Enter") {
-    document.getElementById("unlock-button").click();
+
+    document
+      .getElementById("unlock-button")
+      .click();
+
   }
 
 });
