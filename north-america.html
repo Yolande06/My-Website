@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="North America travel photo gallery featuring destinations, cities, and landscapes." />
+  <title>North America | Yolande's Travel Photos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1><a href="index.html" style="color: inherit; text-decoration: none;">Yolande's Travel Photos</a></h1>
+      <button class="burger-menu" id="burgerMenu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="north-america.html" style="color: white; background-color: rgba(255,255,255,0.08);">North America</a></li>
+        <li><a href="asia.html">Asia</a></li>
+        <li><a href="europe.html">Europe</a></li>
+        <li><a href="south-america.html">South America</a></li>
+        <li><a href="africa.html">Africa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="background: linear-gradient(135deg, rgba(10,10,10,0.8), rgba(16,16,16,0.72)), url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+      <div class="hero-content">
+        <h2>North America</h2>
+        <p>Montains, coasts, and city lights</p>
+      </div>
+    </section>
+
+    <div class="continent-filter" style="display: none;"></div>
+
+    <div class="editorial-intro">
+      <span class="eyebrow">Travel Journal</span>
+      <h2>Wide-open adventures</h2>
+    </div>
+
+    <section class="country-section">
+      <h3>United States</h3>
+
+      <div class="location-section">
+        <h4>California</h4>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="California coastline" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Forest road in California" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Ocean view from California" /></div>
+        </div>
+      </div>
+
+      <div class="location-section">
+        <h4>New York</h4>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?auto=format&fit=crop&w=900&q=80" alt="New York skyline" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" alt="City street in Manhattan" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=900&q=80" alt="Urban architecture in New York" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="country-section">
+      <h3>Canada</h3>
+
+      <div class="location-section">
+        <h4>Banff</h4>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80" alt="Lake and mountains in Banff" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=900&q=80" alt="Canadian wilderness view" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Forest landscape in Canada" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="country-section">
+      <h3>Mexico</h3>
+
+      <div class="location-section">
+        <h4>Mexico City</h4>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1518105779142-d975f22f1b0d?auto=format&fit=crop&w=900&q=80" alt="Colorful streets in Mexico City" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=900&q=80" alt="Historic architecture in Mexico" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=80" alt="Vibrant market scene in Mexico" /></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Yolande's Travel Photos. All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

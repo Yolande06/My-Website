@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Asia travel photo gallery with temple, city, and coastal memories." />
+  <title>Asia | Yolande's Travel Photos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1><a href="index.html" style="color: inherit; text-decoration: none;">Yolande's Travel Photos</a></h1>
+      <button class="burger-menu" id="burgerMenu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="north-america.html">North America</a></li>
+        <li><a href="asia.html" style="color: white; background-color: rgba(255,255,255,0.08);">Asia</a></li>
+        <li><a href="europe.html">Europe</a></li>
+        <li><a href="south-america.html">South America</a></li>
+        <li><a href="africa.html">Africa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="background: linear-gradient(135deg, rgba(10,10,10,0.78), rgba(16,16,16,0.68)), url('https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+      <div class="hero-content">
+        <h2>Asia</h2>
+        <p>Temples, markets, and unforgettable nights</p>
+      </div>
+    </section>
+
+    <div class="continent-filter" style="display: none;"></div>
+
+    <div class="editorial-intro">
+      <span class="eyebrow">Travel Journal</span>
+      <h2>Stories from across the continent</h2>
+    </div>
+
+    <section class="country-section">
+      <h3>Japan</h3>
+
+      <div class="location-section">
+        <h4>Tokyo</h4>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80" alt="Tokyo neon skyline" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=900&q=80" alt="Tokyo city street lights" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1526481280695-3c4691ef0f09?auto=format&fit=crop&w=900&q=80" alt="Traditional architecture in Japan" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="country-section">
+      <h3>Thailand</h3>
+
+      <div class="location-section">
+        <h4>Bangkok</h4>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=900&q=80" alt="Bangkok temples" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Canals and city views in Thailand" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80" alt="Thai street and market scene" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="country-section">
+      <h3>India</h3>
+
+      <div class="location-section">
+        <h4>Jaipur</h4>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1605640840606-3dfde8f2672d?auto=format&fit=crop&w=900&q=80" alt="Pink city architecture in Jaipur" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Indian desert landscape" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80" alt="City exploration in India" /></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Yolande's Travel Photos. All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

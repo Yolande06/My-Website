@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="South America travel photo gallery featuring mountains, cities, and landscapes." />
+  <title>South America | Yolande's Travel Photos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1><a href="index.html" style="color: inherit; text-decoration: none;">Yolande's Travel Photos</a></h1>
+      <button class="burger-menu" id="burgerMenu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="north-america.html">North America</a></li>
+        <li><a href="asia.html">Asia</a></li>
+        <li><a href="europe.html">Europe</a></li>
+        <li><a href="south-america.html" style="color: white; background-color: rgba(255,255,255,0.08);">South America</a></li>
+        <li><a href="africa.html">Africa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="background: linear-gradient(135deg, rgba(10,10,10,0.76), rgba(16,16,16,0.7)), url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+      <div class="hero-content">
+        <h2>South America</h2>
+        <p>Epic landscapes and vibrant culture</p>
+      </div>
+    </section>
+
+    <div class="continent-filter" style="display: none;"></div>
+
+    <div class="editorial-intro">
+      <span class="eyebrow">Travel Journal</span>
+      <h2>Dreams of altitude</h2>
+    </div>
+
+    <section class="country-section">
+      <h3>Peru</h3>
+
+      <div class="location-section">
+        <h4>Machu Picchu</h4>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=900&q=80" alt="Machu Picchu view" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Mountain landscape in Peru" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=900&q=80" alt="Ancient city in Peru" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="country-section">
+      <h3>Brazil</h3>
+
+      <div class="location-section">
+        <h4>Rio de Janeiro</h4>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=900&q=80" alt="Rio skyline" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=80" alt="Brazilian beach scene" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Vibrant city color in Brazil" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="country-section">
+      <h3>Argentina</h3>
+
+      <div class="location-section">
+        <h4>Patagonia</h4>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Patagonia mountains" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Lake in Patagonia" /></div>
+          <div class="photo-item"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" alt="Remote landscape in Argentina" /></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Yolande's Travel Photos. All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
