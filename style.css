@@ -573,68 +573,81 @@ footer {
   .banner-content h3 {
     font-size: 1.4rem;
   }
-}
-/* =========================
-   ANAGRAM PUZZLE
-   ========================= */
+/* =====================================
+   TRAVEL GALLERY PUZZLE
+   ===================================== */
 
 #puzzle-screen {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #111;
+  inset: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+
+  background: #111;
+
+  z-index: 99999;
 }
 
 .puzzle-box {
-  background: white;
-  padding: 50px;
   width: 450px;
   max-width: 85%;
+
+  padding: 50px;
+
   text-align: center;
+
+  background: green;
+
   border-radius: 15px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+}
+
+.puzzle-box h1 {
+  font-size: 45px;
+  margin: 0 0 10px;
 }
 
 .puzzle-box h2 {
-  margin-top: 0;
-  font-size: 28px;
-}
-
-.puzzle-box p {
-  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 #scrambled-word {
+  margin: 30px 0;
+
   font-size: 42px;
   font-weight: bold;
-  letter-spacing: 12px;
-  margin: 30px 0;
-  text-transform: uppercase;
+
+  letter-spacing: 10px;
 }
 
 #answer {
   width: 80%;
-  padding: 14px;
+
+  padding: 13px;
+
   font-size: 18px;
+
   text-align: center;
+
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
 }
 
 #unlock-button {
   display: block;
+
   margin: 15px auto;
+
   padding: 12px 30px;
+
   font-size: 16px;
+
   border: none;
   border-radius: 5px;
+
   cursor: pointer;
 }
 
@@ -643,7 +656,7 @@ footer {
 }
 
 #message {
-  color: #c0392b;
+  min-height: 24px;
+
   font-weight: bold;
-  min-height: 20px;
 }
