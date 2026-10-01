@@ -231,6 +231,36 @@ section {
   color: #111111;
 }
 
+.continent-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 18px 0 42px;
+  padding: 0 10px;
+}
+
+.filter-btn {
+  appearance: none;
+  border: 1px solid rgba(17, 17, 17, 0.18);
+  background: rgba(255, 255, 255, 0.72);
+  color: #111111;
+  padding: 12px 18px;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #111111;
+  color: #f6f0ea;
+  border-color: #111111;
+}
+
 .continent-banners {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
