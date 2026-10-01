@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Yolande's Travel Photo Gallery - Photos organized by country and location." />
+  <meta name="description" content="Yolande's Travel Photo Gallery - Photos organized by continent and country." />
   <title>Yolande's Travel Photos</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -22,10 +22,53 @@
     <nav class="nav-menu" id="navMenu">
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#usa">USA</a></li>
-        <li><a href="#japan">Japan</a></li>
-        <li><a href="#bali">Bali</a></li>
-        <li><a href="#mexico">Mexico</a></li>
+        
+        <!-- North America Dropdown -->
+        <li class="dropdown">
+          <a href="#north-america">North America ▼</a>
+          <div class="dropdown-content">
+            <a href="#usa">🇺🇸 United States</a>
+            <a href="#mexico">🇲🇽 Mexico</a>
+            <a href="#canada">🇨🇦 Canada</a>
+          </div>
+        </li>
+
+        <!-- Asia Dropdown -->
+        <li class="dropdown">
+          <a href="#asia">Asia ▼</a>
+          <div class="dropdown-content">
+            <a href="#japan">🇯🇵 Japan</a>
+            <a href="#bali">🇮🇩 Indonesia (Bali)</a>
+          </div>
+        </li>
+
+        <!-- Europe Dropdown -->
+        <li class="dropdown">
+          <a href="#europe">Europe ▼</a>
+          <div class="dropdown-content">
+            <a href="#france">🇫🇷 France</a>
+            <a href="#italy">🇮🇹 Italy</a>
+            <a href="#spain">🇪🇸 Spain</a>
+            <a href="#uk">🇬🇧 United Kingdom</a>
+            <a href="#Portugal
+          </div>
+        </li>
+
+        <!-- South America Dropdown -->
+        <li class="dropdown">
+          <a href="#south-america">South America ▼</a>
+          <div class="dropdown-content">
+            <a href="#NA">NA</a>
+          </div>
+        </li>
+
+        <!-- Africa Dropdown -->
+        <li class="dropdown">
+          <a href="#africa">Africa ▼</a>
+          <div class="dropdown-content">
+            <a href="#NA">NA</a>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
@@ -39,198 +82,275 @@
       </div>
     </section>
 
-    <!-- USA Country Page -->
-    <section id="usa" class="country-page">
-      <h2>🇺🇸 United States</h2>
-      
-      <div class="location-section">
-        <h3>Hawaii</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/usa-hawaii-1.jpg" alt="Beach in Hawaii" />
-          </div>
-          <div class="photo-item">
-            <img src="images/usa-hawaii-2.jpg" alt="Sunset in Hawaii" />
-          </div>
-          <div class="photo-item">
-            <img src="images/usa-hawaii-3.jpg" alt="Surfer in Hawaii" />
-          </div>
-          <div class="photo-item">
-            <img src="images/usa-hawaii-4.jpg" alt="Volcano Hawaii" />
+    <!-- NORTH AMERICA -->
+    <section id="north-america" class="continent-section">
+      <h2>🌎 North America</h2>
+
+      <!-- USA -->
+      <div id="usa" class="country-section">
+        <h3>🇺🇸 United States</h3>
+
+      <!-- Canada -->
+      <div id="canada" class="country-section">
+        <h3>🇨🇦 Canada</h3>
+        
+        <div class="location-section">
+          <h4>Banff & Lake Louise</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/canada-banff-1.jpg" alt="Lake Louise" />
+            <div class="photo-item">
+              <img src="images/canada-banff-2.jpg" alt="Mountain Views" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="location-section">
-        <h3>California</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/usa-california-1.jpg" alt="Golden Gate Bridge" />
-          </div>
-          <div class="photo-item">
-            <img src="images/usa-california-2.jpg" alt="Santa Monica Pier" />
-          </div>
-          <div class="photo-item">
-            <img src="images/usa-california-3.jpg" alt="Big Sur" />
-          </div>
-        </div>
-      </div>
-
-      <div class="location-section">
-        <h3>New York</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/usa-ny-1.jpg" alt="Times Square" />
-          </div>
-          <div class="photo-item">
-            <img src="images/usa-ny-2.jpg" alt="Central Park" />
+        <div class="location-section">
+          <h4>Niagara Falls</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/canada-niagara-1.jpg" alt="Niagara Falls" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Japan Country Page -->
-    <section id="japan" class="country-page">
-      <h2>🇯🇵 Japan</h2>
-      
-      <div class="location-section">
-        <h3>Tokyo</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/japan-tokyo-1.jpg" alt="Shibuya Crossing" />
+    <!-- ASIA -->
+    <section id="asia" class="continent-section">
+      <h2>🌏 Asia</h2>
+
+      <!-- Japan -->
+      <div id="japan" class="country-section">
+        <h3>🇯🇵 Japan</h3>
+        
+        <div class="location-section">
+          <h4>Tokyo</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/japan-tokyo-1.jpg" alt="Shibuya Crossing" />
+            </div>
+            <div class="photo-item">
+              <img src="images/japan-tokyo-2.jpg" alt="Senso-ji Temple" />
+            </div>
+            <div class="photo-item">
+              <img src="images/japan-tokyo-3.jpg" alt="Tokyo Tower" />
+            </div>
+            <div class="photo-item">
+              <img src="images/japan-tokyo-4.jpg" alt="Neon Streets" />
+            </div>
           </div>
-          <div class="photo-item">
-            <img src="images/japan-tokyo-2.jpg" alt="Senso-ji Temple" />
+        </div>
+
+        <div class="location-section">
+          <h4>Kyoto</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/japan-kyoto-1.jpg" alt="Fushimi Inari" />
+            </div>
+            <div class="photo-item">
+              <img src="images/japan-kyoto-2.jpg" alt="Arashiyama Bamboo" />
+            </div>
+            <div class="photo-item">
+              <img src="images/japan-kyoto-3.jpg" alt="Gion District" />
+            </div>
           </div>
-          <div class="photo-item">
-            <img src="images/japan-tokyo-3.jpg" alt="Tokyo Tower" />
-          </div>
-          <div class="photo-item">
-            <img src="images/japan-tokyo-4.jpg" alt="Neon Streets" />
+        </div>
+
+        <div class="location-section">
+          <h4>Mount Fuji</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/japan-fuji-1.jpg" alt="Mount Fuji Peak" />
+            </div>
+            <div class="photo-item">
+              <img src="images/japan-fuji-2.jpg" alt="Fuji Sunrise" />
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="location-section">
-        <h3>Kyoto</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/japan-kyoto-1.jpg" alt="Fushimi Inari" />
+      <!-- Indonesia (Bali) -->
+      <div id="bali" class="country-section">
+        <h3>🇮🇩 Indonesia - Bali</h3>
+        
+        <div class="location-section">
+          <h4>Ubud</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/bali-ubud-1.jpg" alt="Rice Terraces" />
+            </div>
+            <div class="photo-item">
+              <img src="images/bali-ubud-2.jpg" alt="Ubud Market" />
+            </div>
+            <div class="photo-item">
+              <img src="images/bali-ubud-3.jpg" alt="Sacred Monkey Forest" />
+            </div>
           </div>
-          <div class="photo-item">
-            <img src="images/japan-kyoto-2.jpg" alt="Arashiyama Bamboo" />
+        </div>
+
+        <div class="location-section">
+          <h4>Beaches</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/bali-beach-1.jpg" alt="Seminyak Beach" />
+            </div>
+            <div class="photo-item">
+              <img src="images/bali-beach-2.jpg" alt="Uluwatu Cliffs" />
+            </div>
+            <div class="photo-item">
+              <img src="images/bali-beach-3.jpg" alt="Sunset Beach" />
+            </div>
+            <div class="photo-item">
+              <img src="images/bali-beach-4.jpg" alt="Crystal Waters" />
+            </div>
           </div>
-          <div class="photo-item">
-            <img src="images/japan-kyoto-3.jpg" alt="Gion District" />
+        </div>
+
+        <div class="location-section">
+          <h4>Temples</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/bali-temple-1.jpg" alt="Tanah Lot Temple" />
+            </div>
+            <div class="photo-item">
+              <img src="images/bali-temple-2.jpg" alt="Besakih Temple" />
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="location-section">
-        <h3>Mount Fuji</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/japan-fuji-1.jpg" alt="Mount Fuji Peak" />
+    <!-- EUROPE -->
+    <section id="europe" class="continent-section">
+      <h2>🌍 Europe</h2>
+
+      <!-- France -->
+      <div id="france" class="country-section">
+        <h3>🇫🇷 France</h3>
+        
+        <div class="location-section">
+          <h4>Paris</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/france-paris-1.jpg" alt="Eiffel Tower" />
+            </div>
+            <div class="photo-item">
+              <img src="images/france-paris-2.jpg" alt="Louvre Museum" />
+            </div>
+            <div class="photo-item">
+              <img src="images/france-paris-3.jpg" alt="Arc de Triomphe" />
+            </div>
           </div>
-          <div class="photo-item">
-            <img src="images/japan-fuji-2.jpg" alt="Fuji Sunrise" />
+        </div>
+
+        <div class="location-section">
+          <h4>Provence</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/france-provence-1.jpg" alt="Lavender Fields" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Italy -->
+      <div id="italy" class="country-section">
+        <h3>🇮🇹 Italy</h3>
+        
+        <div class="location-section">
+          <h4>Rome</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/italy-rome-1.jpg" alt="Colosseum" />
+            </div>
+            <div class="photo-item">
+              <img src="images/italy-rome-2.jpg" alt="Vatican" />
+            </div>
+          </div>
+        </div>
+
+        <div class="location-section">
+          <h4>Venice</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/italy-venice-1.jpg" alt="Grand Canal" />
+            </div>
+            <div class="photo-item">
+              <img src="images/italy-venice-2.jpg" alt="St. Mark's Square" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spain -->
+      <div id="spain" class="country-section">
+        <h3>🇪🇸 Spain</h3>
+        
+        <div class="location-section">
+          <h4>Barcelona</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/spain-barcelona-1.jpg" alt="Sagrada Familia" />
+            </div>
+            <div class="photo-item">
+              <img src="images/spain-barcelona-2.jpg" alt="Park Güell" />
+            </div>
+          </div>
+        </div>
+
+        <div class="location-section">
+          <h4>Madrid</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/spain-madrid-1.jpg" alt="Prado Museum" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UK -->
+      <div id="uk" class="country-section">
+        <h3>🇬🇧 United Kingdom</h3>
+        
+        <div class="location-section">
+          <h4>London</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/uk-london-1.jpg" alt="Big Ben" />
+            </div>
+            <div class="photo-item">
+              <img src="images/uk-london-2.jpg" alt="Tower Bridge" />
+            </div>
+          </div>
+        </div>
+
+        <div class="location-section">
+          <h4>Scottish Highlands</h4>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/uk-scotland-1.jpg" alt="Highlands" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Bali Country Page -->
-    <section id="bali" class="country-page">
-      <h2>🇮🇩 Indonesia - Bali</h2>
-      
-      <div class="location-section">
-        <h3>Ubud</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/bali-ubud-1.jpg" alt="Rice Terraces" />
-          </div>
-          <div class="photo-item">
-            <img src="images/bali-ubud-2.jpg" alt="Ubud Market" />
-          </div>
-          <div class="photo-item">
-            <img src="images/bali-ubud-3.jpg" alt="Sacred Monkey Forest" />
-          </div>
-        </div>
-      </div>
+    <!-- SOUTH AMERICA -->
+    <section id="south-america" class="continent-section">
+      <h2>🌎 South America</h2>
 
-      <div class="location-section">
-        <h3>Beaches</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/bali-beach-1.jpg" alt="Seminyak Beach" />
-          </div>
-          <div class="photo-item">
-            <img src="images/bali-beach-2.jpg" alt="Uluwatu Cliffs" />
-          </div>
-          <div class="photo-item">
-            <img src="images/bali-beach-3.jpg" alt="Sunset Beach" />
-          </div>
-          <div class="photo-item">
-            <img src="images/bali-beach-4.jpg" alt="Crystal Waters" />
-          </div>
-        </div>
-      </div>
+      <!-- NA -->
+      <div id="NA" class="country-section">
+        <h3>NA</h3>
 
-      <div class="location-section">
-        <h3>Temples</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/bali-temple-1.jpg" alt="Tanah Lot Temple" />
-          </div>
-          <div class="photo-item">
-            <img src="images/bali-temple-2.jpg" alt="Besakih Temple" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- AFRICA -->
+    <section id="africa" class="continent-section">
+      <h2>🌍 Africa</h2>
 
-    <!-- Mexico Country Page -->
-    <section id="mexico" class="country-page">
-      <h2>🇲🇽 Mexico</h2>
-      
-      <div class="location-section">
-        <h3>Cancun & Playa del Carmen</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/mexico-cancun-1.jpg" alt="Caribbean Beach" />
-          </div>
-          <div class="photo-item">
-            <img src="images/mexico-cancun-2.jpg" alt="Turquoise Waters" />
-          </div>
-          <div class="photo-item">
-            <img src="images/mexico-cancun-3.jpg" alt="Cenote" />
-          </div>
-        </div>
-      </div>
-
-      <div class="location-section">
-        <h3>Mexico City</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/mexico-city-1.jpg" alt="Zócalo Square" />
-          </div>
-          <div class="photo-item">
-            <img src="images/mexico-city-2.jpg" alt="Frida Kahlo Museum" />
-          </div>
-        </div>
-      </div>
-
-      <div class="location-section">
-        <h3>Oaxaca</h3>
-        <div class="photo-grid">
-          <div class="photo-item">
-            <img src="images/mexico-oaxaca-1.jpg" alt="Oaxaca Market" />
-          </div>
-          <div class="photo-item">
-            <img src="images/mexico-oaxaca-2.jpg" alt="Local Culture" />
-          </div>
-          <div class="photo-item">
-            <img src="images/mexico-oaxaca-3.jpg" alt="Traditional Food" />
+      <!-- South Africa -->
+      <div id="NA" class="NA">
+        <h3>NA</h3>
+            </div>
           </div>
         </div>
       </div>
