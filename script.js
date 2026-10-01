@@ -1,14 +1,15 @@
-const burgerMenu = document.getElementById('burgerMenu');
-const navMenu = document.getElementById('navMenu');
-
 // =====================================
-// PROTECT THE TRAVEL GALLERY
+// PROTECT THE ENTIRE TRAVEL GALLERY
 // =====================================
 
-if (
-  window.location.pathname.endsWith('index.html') ||
-  window.location.pathname === '/'
-) {
+const currentPage =
+  window.location.pathname.split('/').pop();
+
+const publicPages = [
+  'unlock.html'
+];
+
+if (!publicPages.includes(currentPage)) {
 
   const galleryUnlocked =
     sessionStorage.getItem('galleryUnlocked');
@@ -19,7 +20,8 @@ if (
 
   }
 
-}
+const burgerMenu = document.getElementById('burgerMenu');
+const navMenu = document.getElementById('navMenu');
 
 if (burgerMenu && navMenu) {
   burgerMenu.addEventListener('click', () => {
