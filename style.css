@@ -215,12 +215,19 @@ section {
   color: rgba(255, 255, 255, 0.9);
 }
 
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
 /* Continent Filter */
 .filter-container {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 40px;
   flex-wrap: wrap;
 }
 
@@ -249,6 +256,46 @@ section {
   box-shadow: 0 4px 12px rgba(0, 102, 204, 0.5);
 }
 
+/* Search Box */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  color: var(--primary);
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: 2px solid var(--primary);
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.search-box:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+  background-color: white;
+}
+
+.search-box::placeholder {
+  color: #999;
+}
+
 /* Continent Section */
 .continent-section {
   margin-bottom: 80px;
@@ -273,6 +320,11 @@ section {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   border-left: 5px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.country-section.search-hidden {
+  display: none;
 }
 
 .country-section h3 {
@@ -330,26 +382,30 @@ section {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 50px;
-  height: 50px;
-  background-color: var(--primary);
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   border: none;
   border-radius: 50%;
-  font-size: 24px;
   cursor: pointer;
   display: none;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
-  transition: all 0.3s;
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+  transition: all 0.3s ease;
   z-index: 99;
+  font-size: 1.3rem;
 }
 
 #backToTop:hover {
-  background-color: var(--secondary);
-  box-shadow: 0 6px 16px rgba(0, 212, 255, 0.4);
-  transform: translateY(-3px);
+  background: linear-gradient(135deg, var(--secondary), #00e6ff);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.5);
+  transform: translateY(-5px);
+}
+
+#backToTop:active {
+  transform: translateY(-2px);
 }
 
 #backToTop.show {
@@ -388,6 +444,10 @@ footer {
     font-size: 2rem;
   }
 
+  .filter-controls {
+    gap: 15px;
+  }
+
   .filter-container {
     gap: 8px;
   }
@@ -397,12 +457,22 @@ footer {
     font-size: 0.9rem;
   }
 
+  .search-box {
+    padding: 10px 15px 10px 40px;
+    font-size: 0.95rem;
+  }
+
+  .search-icon {
+    left: 12px;
+    font-size: 1rem;
+  }
+
   #backToTop {
     bottom: 20px;
     right: 20px;
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
   }
 }
 
@@ -434,5 +504,18 @@ footer {
   .filter-btn {
     padding: 6px 12px;
     font-size: 0.8rem;
+  }
+
+  .search-box {
+    padding: 10px 15px 10px 40px;
+    font-size: 0.9rem;
+  }
+
+  #backToTop {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+    bottom: 15px;
+    right: 15px;
   }
 }

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Yolande's Travel Photo Gallery - Photos organized by continent and country." />
   <title>Yolande's Travel Photos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -23,7 +24,6 @@
       <ul>
         <li><a href="#home">Home</a></li>
         
-        <!-- North America Dropdown -->
         <li class="dropdown">
           <a href="#north-america">North America ▼</a>
           <div class="dropdown-content">
@@ -33,7 +33,6 @@
           </div>
         </li>
 
-        <!-- Asia Dropdown -->
         <li class="dropdown">
           <a href="#asia">Asia ▼</a>
           <div class="dropdown-content">
@@ -42,7 +41,6 @@
           </div>
         </li>
 
-        <!-- Europe Dropdown -->
         <li class="dropdown">
           <a href="#europe">Europe ▼</a>
           <div class="dropdown-content">
@@ -50,23 +48,20 @@
             <a href="#italy">🇮🇹 Italy</a>
             <a href="#spain">🇪🇸 Spain</a>
             <a href="#uk">🇬🇧 United Kingdom</a>
-            <a href="#Portugal
           </div>
         </li>
 
-        <!-- South America Dropdown -->
         <li class="dropdown">
           <a href="#south-america">South America ▼</a>
           <div class="dropdown-content">
-            <a href="#NA">NA</a>
+            <a href="#south-america">View section</a>
           </div>
         </li>
 
-        <!-- Africa Dropdown -->
         <li class="dropdown">
           <a href="#africa">Africa ▼</a>
           <div class="dropdown-content">
-            <a href="#NA">NA</a>
+            <a href="#africa">View section</a>
           </div>
         </li>
       </ul>
@@ -74,7 +69,6 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="hero-content">
         <h2>My Travel Photo Gallery</h2>
@@ -82,16 +76,36 @@
       </div>
     </section>
 
-    <!-- NORTH AMERICA -->
-    <section id="north-america" class="continent-section">
+    <div class="filter-controls">
+      <div class="filter-container" aria-label="Filter photos by continent">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="north-america" type="button">North America</button>
+        <button class="filter-btn" data-filter="asia" type="button">Asia</button>
+        <button class="filter-btn" data-filter="europe" type="button">Europe</button>
+        <button class="filter-btn" data-filter="south-america" type="button">South America</button>
+        <button class="filter-btn" data-filter="africa" type="button">Africa</button>
+      </div>
+
+      <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input 
+          type="text" 
+          id="countrySearch" 
+          class="search-box" 
+          placeholder="Search countries or locations..." 
+          aria-label="Search for countries or locations"
+        />
+      </div>
+    </div>
+
+    <section id="north-america" class="continent-section" data-continent="north-america">
       <h2>🌎 North America</h2>
 
-      <!-- USA -->
-      <div id="usa" class="country-section">
+      <div id="usa" class="country-section" data-country="United States">
         <h3>🇺🇸 United States</h3>
+      </div>
 
-      <!-- Canada -->
-      <div id="canada" class="country-section">
+      <div id="canada" class="country-section" data-country="Canada">
         <h3>🇨🇦 Canada</h3>
         
         <div class="location-section">
@@ -99,6 +113,7 @@
           <div class="photo-grid">
             <div class="photo-item">
               <img src="images/canada-banff-1.jpg" alt="Lake Louise" />
+            </div>
             <div class="photo-item">
               <img src="images/canada-banff-2.jpg" alt="Mountain Views" />
             </div>
@@ -116,12 +131,10 @@
       </div>
     </section>
 
-    <!-- ASIA -->
-    <section id="asia" class="continent-section">
+    <section id="asia" class="continent-section" data-continent="asia">
       <h2>🌏 Asia</h2>
 
-      <!-- Japan -->
-      <div id="japan" class="country-section">
+      <div id="japan" class="country-section" data-country="Japan">
         <h3>🇯🇵 Japan</h3>
         
         <div class="location-section">
@@ -170,8 +183,7 @@
         </div>
       </div>
 
-      <!-- Indonesia (Bali) -->
-      <div id="bali" class="country-section">
+      <div id="bali" class="country-section" data-country="Indonesia">
         <h3>🇮🇩 Indonesia - Bali</h3>
         
         <div class="location-section">
@@ -219,13 +231,12 @@
           </div>
         </div>
       </div>
+    </section>
 
-    <!-- EUROPE -->
-    <section id="europe" class="continent-section">
+    <section id="europe" class="continent-section" data-continent="europe">
       <h2>🌍 Europe</h2>
 
-      <!-- France -->
-      <div id="france" class="country-section">
+      <div id="france" class="country-section" data-country="France">
         <h3>🇫🇷 France</h3>
         
         <div class="location-section">
@@ -253,8 +264,7 @@
         </div>
       </div>
 
-      <!-- Italy -->
-      <div id="italy" class="country-section">
+      <div id="italy" class="country-section" data-country="Italy">
         <h3>🇮🇹 Italy</h3>
         
         <div class="location-section">
@@ -282,8 +292,7 @@
         </div>
       </div>
 
-      <!-- Spain -->
-      <div id="spain" class="country-section">
+      <div id="spain" class="country-section" data-country="Spain">
         <h3>🇪🇸 Spain</h3>
         
         <div class="location-section">
@@ -308,8 +317,7 @@
         </div>
       </div>
 
-      <!-- UK -->
-      <div id="uk" class="country-section">
+      <div id="uk" class="country-section" data-country="United Kingdom">
         <h3>🇬🇧 United Kingdom</h3>
         
         <div class="location-section">
@@ -335,24 +343,19 @@
       </div>
     </section>
 
-    <!-- SOUTH AMERICA -->
-    <section id="south-america" class="continent-section">
+    <section id="south-america" class="continent-section" data-continent="south-america">
       <h2>🌎 South America</h2>
 
-      <!-- NA -->
-      <div id="NA" class="country-section">
-        <h3>NA</h3>
+      <div class="country-section">
+        <h3>Coming Soon</h3>
+      </div>
+    </section>
 
-    <!-- AFRICA -->
-    <section id="africa" class="continent-section">
+    <section id="africa" class="continent-section" data-continent="africa">
       <h2>🌍 Africa</h2>
 
-      <!-- South Africa -->
-      <div id="NA" class="NA">
-        <h3>NA</h3>
-            </div>
-          </div>
-        </div>
+      <div class="country-section">
+        <h3>Coming Soon</h3>
       </div>
     </section>
   </main>
@@ -361,6 +364,7 @@
     <p>© 2024 Yolande's Travel Photos. All rights reserved.</p>
   </footer>
 
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
   <script src="script.js"></script>
 </body>
 </html>
