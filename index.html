@@ -1,83 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <Head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal website for Yolande featuring her travels.">
-  <title>Yolande | Yolande's Great Big Adventure</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yolande's Travel Photo Gallery - Photos organized by country and location." />
+  <title>Yolande's Travel Photos</title>
   <link rel="stylesheet" href="style.css" />
-  </Head>
+</head>
 
-  <body>
-    <header>
-      <div class="navbar">
-        <h1>Yolande</h1>
-        <Button class="burger-menu" id="burgerMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </Button>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>📸 Yolande's Travel Photos</h1>
+      <button class="burger-menu" id="burgerMenu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#usa">USA</a></li>
+        <li><a href="#japan">Japan</a></li>
+        <li><a href="#bali">Bali</a></li>
+        <li><a href="#mexico">Mexico</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>My Travel Photo Gallery</h2>
+        <p>A collection of memories from around the world</p>
       </div>
+    </section>
+
+    <!-- USA Country Page -->
+    <section id="usa" class="country-page">
+      <h2>🇺🇸 United States</h2>
       
-      <nav class="nav-menu" id="navMenu">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#interests">Interests</a></li>
-          <li><a href="#links">Links</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+      <div class="location-section">
+        <h3>Hawaii</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/usa-hawaii-1.jpg" alt="Beach in Hawaii" />
+          </div>
+          <div class="photo-item">
+            <img src="images/usa-hawaii-2.jpg" alt="Sunset in Hawaii" />
+          </div>
+          <div class="photo-item">
+            <img src="images/usa-hawaii-3.jpg" alt="Surfer in Hawaii" />
+          </div>
+          <div class="photo-item">
+            <img src="images/usa-hawaii-4.jpg" alt="Volcano Hawaii" />
+          </div>
+        </div>
+      </div>
 
-    <main>
-      <section id="home">
-        <h1>Welcome to My Website</h1>
-        <p>Hello!.</p>
-      </section>
+      <div class="location-section">
+        <h3>California</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/usa-california-1.jpg" alt="Golden Gate Bridge" />
+          </div>
+          <div class="photo-item">
+            <img src="images/usa-california-2.jpg" alt="Santa Monica Pier" />
+          </div>
+          <div class="photo-item">
+            <img src="images/usa-california-3.jpg" alt="Big Sur" />
+          </div>
+        </div>
+      </div>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Welcome to my first website.
-        </p>
-      </section>
+      <div class="location-section">
+        <h3>New York</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/usa-ny-1.jpg" alt="Times Square" />
+          </div>
+          <div class="photo-item">
+            <img src="images/usa-ny-2.jpg" alt="Central Park" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section id="interests">
-        <h2>My Interests</h2>
-        <ul>
-          <li>Surfing</li>
-          <li>Camping</li>
-          <li>Travelling</li>
-        </ul>
-      </section>
+    <!-- Japan Country Page -->
+    <section id="japan" class="country-page">
+      <h2>🇯🇵 Japan</h2>
+      
+      <div class="location-section">
+        <h3>Tokyo</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/japan-tokyo-1.jpg" alt="Shibuya Crossing" />
+          </div>
+          <div class="photo-item">
+            <img src="images/japan-tokyo-2.jpg" alt="Senso-ji Temple" />
+          </div>
+          <div class="photo-item">
+            <img src="images/japan-tokyo-3.jpg" alt="Tokyo Tower" />
+          </div>
+          <div class="photo-item">
+            <img src="images/japan-tokyo-4.jpg" alt="Neon Streets" />
+          </div>
+        </div>
+      </div>
 
-      <section id="links">
-        <h2>My Links</h2>
-        <ul>
-          <li>
-            <a href="https://github.com/"target="_blank" rel="noopener noreferrer">
-              Visit GitHub
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com"target="_blank" rel="noopener noreferre">
-            Visit Google
-            </a>
-          </li>
-        </ul>
-      </section>
+      <div class="location-section">
+        <h3>Kyoto</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/japan-kyoto-1.jpg" alt="Fushimi Inari" />
+          </div>
+          <div class="photo-item">
+            <img src="images/japan-kyoto-2.jpg" alt="Arashiyama Bamboo" />
+          </div>
+          <div class="photo-item">
+            <img src="images/japan-kyoto-3.jpg" alt="Gion District" />
+          </div>
+        </div>
+      </div>
 
-      <Section id="contact">
-        <h2>Contact</h2>
-        <p>You can contact me here</p>
-        <a href="mailto:your-email@example.com">Email Me</a>
-      </Section>
-    </main>
+      <div class="location-section">
+        <h3>Mount Fuji</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/japan-fuji-1.jpg" alt="Mount Fuji Peak" />
+          </div>
+          <div class="photo-item">
+            <img src="images/japan-fuji-2.jpg" alt="Fuji Sunrise" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      <p>(c) 2026 Yolande</p>
-    </footer>
+    <!-- Bali Country Page -->
+    <section id="bali" class="country-page">
+      <h2>🇮🇩 Indonesia - Bali</h2>
+      
+      <div class="location-section">
+        <h3>Ubud</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/bali-ubud-1.jpg" alt="Rice Terraces" />
+          </div>
+          <div class="photo-item">
+            <img src="images/bali-ubud-2.jpg" alt="Ubud Market" />
+          </div>
+          <div class="photo-item">
+            <img src="images/bali-ubud-3.jpg" alt="Sacred Monkey Forest" />
+          </div>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="location-section">
+        <h3>Beaches</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/bali-beach-1.jpg" alt="Seminyak Beach" />
+          </div>
+          <div class="photo-item">
+            <img src="images/bali-beach-2.jpg" alt="Uluwatu Cliffs" />
+          </div>
+          <div class="photo-item">
+            <img src="images/bali-beach-3.jpg" alt="Sunset Beach" />
+          </div>
+          <div class="photo-item">
+            <img src="images/bali-beach-4.jpg" alt="Crystal Waters" />
+          </div>
+        </div>
+      </div>
+
+      <div class="location-section">
+        <h3>Temples</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/bali-temple-1.jpg" alt="Tanah Lot Temple" />
+          </div>
+          <div class="photo-item">
+            <img src="images/bali-temple-2.jpg" alt="Besakih Temple" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mexico Country Page -->
+    <section id="mexico" class="country-page">
+      <h2>🇲🇽 Mexico</h2>
+      
+      <div class="location-section">
+        <h3>Cancun & Playa del Carmen</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/mexico-cancun-1.jpg" alt="Caribbean Beach" />
+          </div>
+          <div class="photo-item">
+            <img src="images/mexico-cancun-2.jpg" alt="Turquoise Waters" />
+          </div>
+          <div class="photo-item">
+            <img src="images/mexico-cancun-3.jpg" alt="Cenote" />
+          </div>
+        </div>
+      </div>
+
+      <div class="location-section">
+        <h3>Mexico City</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/mexico-city-1.jpg" alt="Zócalo Square" />
+          </div>
+          <div class="photo-item">
+            <img src="images/mexico-city-2.jpg" alt="Frida Kahlo Museum" />
+          </div>
+        </div>
+      </div>
+
+      <div class="location-section">
+        <h3>Oaxaca</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="images/mexico-oaxaca-1.jpg" alt="Oaxaca Market" />
+          </div>
+          <div class="photo-item">
+            <img src="images/mexico-oaxaca-2.jpg" alt="Local Culture" />
+          </div>
+          <div class="photo-item">
+            <img src="images/mexico-oaxaca-3.jpg" alt="Traditional Food" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Yolande's Travel Photos. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
