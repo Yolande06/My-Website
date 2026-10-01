@@ -23,7 +23,7 @@
     <nav class="nav-menu" id="navMenu">
       <ul>
         <li><a href="#home">Home</a></li>
-        
+
         <li class="dropdown">
           <a href="#north-america">North America ▼</a>
           <div class="dropdown-content">
@@ -72,30 +72,50 @@
     <section id="home" class="hero">
       <div class="hero-content">
         <h2>My Travel Photo Gallery</h2>
-        <p>A collection of memories from around the world</p>
+        <p>Explore the world through my lens</p>
       </div>
     </section>
 
-    <div class="filter-controls">
-      <div class="filter-container" aria-label="Filter photos by continent">
-        <button class="filter-btn active" data-filter="all" type="button">All</button>
-        <button class="filter-btn" data-filter="north-america" type="button">North America</button>
-        <button class="filter-btn" data-filter="asia" type="button">Asia</button>
-        <button class="filter-btn" data-filter="europe" type="button">Europe</button>
-        <button class="filter-btn" data-filter="south-america" type="button">South America</button>
-        <button class="filter-btn" data-filter="africa" type="button">Africa</button>
-      </div>
+    <div class="continent-banners" aria-label="Choose a continent">
+      <a href="#north-america" class="banner-card" style="background-image: url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=80');">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h3>🌎 North America</h3>
+          <p>From mountain escapes to city lights</p>
+        </div>
+      </a>
 
-      <div class="search-container">
-        <i class="fas fa-search search-icon"></i>
-        <input 
-          type="text" 
-          id="countrySearch" 
-          class="search-box" 
-          placeholder="Search countries or locations..." 
-          aria-label="Search for countries or locations"
-        />
-      </div>
+      <a href="#asia" class="banner-card" style="background-image: url('https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=1200&q=80');">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h3>🌏 Asia</h3>
+          <p>Ancient temples, neon streets, and tropical beauty</p>
+        </div>
+      </a>
+
+      <a href="#europe" class="banner-card" style="background-image: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1200&q=80');">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h3>🌍 Europe</h3>
+          <p>Historic charm and romantic getaways</p>
+        </div>
+      </a>
+
+      <a href="#south-america" class="banner-card" style="background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80');">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h3>🌎 South America</h3>
+          <p>Epic landscapes and vibrant culture</p>
+        </div>
+      </a>
+
+      <a href="#africa" class="banner-card" style="background-image: url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1200&q=80');">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h3>🌍 Africa</h3>
+          <p>Sunrise safaris and unforgettable views</p>
+        </div>
+      </a>
     </div>
 
     <section id="north-america" class="continent-section" data-continent="north-america">
@@ -107,7 +127,7 @@
 
       <div id="canada" class="country-section" data-country="Canada">
         <h3>🇨🇦 Canada</h3>
-        
+
         <div class="location-section">
           <h4>Banff & Lake Louise</h4>
           <div class="photo-grid">
@@ -136,7 +156,7 @@
 
       <div id="japan" class="country-section" data-country="Japan">
         <h3>🇯🇵 Japan</h3>
-        
+
         <div class="location-section">
           <h4>Tokyo</h4>
           <div class="photo-grid">
@@ -185,7 +205,7 @@
 
       <div id="bali" class="country-section" data-country="Indonesia">
         <h3>🇮🇩 Indonesia - Bali</h3>
-        
+
         <div class="location-section">
           <h4>Ubud</h4>
           <div class="photo-grid">
@@ -238,7 +258,7 @@
 
       <div id="france" class="country-section" data-country="France">
         <h3>🇫🇷 France</h3>
-        
+
         <div class="location-section">
           <h4>Paris</h4>
           <div class="photo-grid">
@@ -266,7 +286,7 @@
 
       <div id="italy" class="country-section" data-country="Italy">
         <h3>🇮🇹 Italy</h3>
-        
+
         <div class="location-section">
           <h4>Rome</h4>
           <div class="photo-grid">
@@ -294,7 +314,7 @@
 
       <div id="spain" class="country-section" data-country="Spain">
         <h3>🇪🇸 Spain</h3>
-        
+
         <div class="location-section">
           <h4>Barcelona</h4>
           <div class="photo-grid">
@@ -319,7 +339,7 @@
 
       <div id="uk" class="country-section" data-country="United Kingdom">
         <h3>🇬🇧 United Kingdom</h3>
-        
+
         <div class="location-section">
           <h4>London</h4>
           <div class="photo-grid">
