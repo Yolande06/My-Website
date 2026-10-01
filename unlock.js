@@ -3,7 +3,7 @@
 // =====================================
 
 const puzzleWords = [
-  "",
+  "beach",
   "island",
   "travel",
   "camera",
