@@ -1,153 +1,26 @@
 // =====================================
-// TRAVEL GALLERY ANAGRAM
+// PROTECT THE ENTIRE TRAVEL GALLERY
 // =====================================
 
-const puzzleScreen = document.getElementById('puzzle-screen');
+const currentPage =
+  window.location.pathname.split('/').pop();
 
-if (puzzleScreen) {
+const publicPages = [
+  'unlock.html'
+];
 
-  // Words that can appear
-  const puzzleWords = [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Andorra",
-    "Angola",
-    "Antigua and Barbuda",
-    "Argentina",
-    "Armenia",
-    "Australia",
-    "Austria",
-    "Azerbaijan",
-    "The Bahamas",
-    "Bahrain",
-    "Bangladesh",
-    "Barbados"
-  ];
+if (!publicPages.includes(currentPage)) {
 
+  const galleryUnlocked =
+    sessionStorage.getItem('galleryUnlocked');
 
-  // Pick a random word
-  const correctWord =
-    puzzleWords[Math.floor(Math.random() * puzzleWords.length)];
+  if (galleryUnlocked !== 'true') {
 
-
-  // Scramble the word
-  function scrambleWord(word) {
-
-    const letters = word.split("");
-
-    for (let i = letters.length - 1; i > 0; i--) {
-
-      const randomIndex =
-        Math.floor(Math.random() * (i + 1));
-
-      const temp = letters[i];
-
-      letters[i] = letters[randomIndex];
-
-      letters[randomIndex] = temp;
-    }
-
-    return letters.join("");
-  }
-
-
-  // Create the scrambled word
-  let scrambledWord = scrambleWord(correctWord);
-
-
-  // Make sure it is different from the original
-  while (scrambledWord === correctWord) {
-    scrambledWord = scrambleWord(correctWord);
-  }
-
-
-  // Find the word box
-  const wordBox =
-    document.getElementById('scrambled-word');
-
-
-  // Put the scrambled word on the screen
-  if (wordBox) {
-
-    wordBox.textContent =
-      scrambledWord.toUpperCase();
-
-  }
-
-
-  // Check the answer
-  const unlockButton =
-    document.getElementById('unlock-button');
-
-
-  if (unlockButton) {
-
-    unlockButton.addEventListener('click', function() {
-
-      const answer =
-        document.getElementById('answer')
-          .value
-          .toLowerCase()
-          .trim();
-
-      const message =
-        document.getElementById('message');
-
-
-      if (answer === correctWord) {
-
-        message.textContent =
-          "✓ Correct! Welcome!";
-
-        // Remember that the puzzle was solved
-        sessionStorage.setItem(
-          'galleryUnlocked',
-          'true'
-        );
-
-
-        // Go to your website
-        setTimeout(function() {
-
-          window.location.href = 'index.html';
-
-        }, 500);
-
-
-      } else {
-
-        message.textContent =
-          "❌ Incorrect. Try again!";
-
-      }
-
-    });
-
-  }
-
-
-  // Allow Enter key
-  const answerInput =
-    document.getElementById('answer');
-
-
-  if (answerInput) {
-
-    answerInput.addEventListener('keydown', function(event) {
-
-      if (event.key === 'Enter') {
-
-        unlockButton.click();
-
-      }
-
-    });
+    window.location.href = 'unlock.html';
 
   }
 
 }
-
 const burgerMenu = document.getElementById('burgerMenu');
 const navMenu = document.getElementById('navMenu');
 
@@ -281,3 +154,151 @@ const setupBackToTop = () => {
 
 setupContinentFilter();
 setupBackToTop();
+
+```javascript
+// =====================================
+// TRAVEL GALLERY ANAGRAM
+// =====================================
+
+const puzzleScreen = document.getElementById('puzzle-screen');
+
+if (puzzleScreen) {
+
+  // Words that can appear
+  const puzzleWords = [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Andorra",
+    "Angola",
+    "Antigua and Barbuda",
+    "Argentina",
+    "Armenia",
+    "Australia",
+    "Austria",
+    "Azerbaijan",
+    
+  ];
+
+
+  // Pick a random word
+  const correctWord =
+    puzzleWords[Math.floor(Math.random() * puzzleWords.length)];
+
+
+  // Scramble the word
+  function scrambleWord(word) {
+
+    const letters = word.split("");
+
+    for (let i = letters.length - 1; i > 0; i--) {
+
+      const randomIndex =
+        Math.floor(Math.random() * (i + 1));
+
+      const temp = letters[i];
+
+      letters[i] = letters[randomIndex];
+
+      letters[randomIndex] = temp;
+    }
+
+    return letters.join("");
+  }
+
+
+  // Create the scrambled word
+  let scrambledWord = scrambleWord(correctWord);
+
+
+  // Make sure it is different from the original
+  while (scrambledWord === correctWord) {
+    scrambledWord = scrambleWord(correctWord);
+  }
+
+
+  // Find the word box
+  const wordBox =
+    document.getElementById('scrambled-word');
+
+
+  // Put the scrambled word on the screen
+  if (wordBox) {
+
+    wordBox.textContent =
+      scrambledWord.toUpperCase();
+
+  }
+
+
+  // Check the answer
+  const unlockButton =
+    document.getElementById('unlock-button');
+
+
+  if (unlockButton) {
+
+    unlockButton.addEventListener('click', function() {
+
+      const answer =
+        document.getElementById('answer')
+          .value
+          .toLowerCase()
+          .trim();
+
+      const message =
+        document.getElementById('message');
+
+
+      if (answer === correctWord) {
+
+        message.textContent =
+          "✓ Correct! Welcome!";
+
+        // Remember that the puzzle was solved
+        sessionStorage.setItem(
+          'galleryUnlocked',
+          'true'
+        );
+
+
+        // Go to your website
+        setTimeout(function() {
+
+          window.location.href = 'index.html';
+
+        }, 500);
+
+
+      } else {
+
+        message.textContent =
+          "❌ Incorrect. Try again!";
+
+      }
+
+    });
+
+  }
+
+
+  // Allow Enter key
+  const answerInput =
+    document.getElementById('answer');
+
+
+  if (answerInput) {
+
+    answerInput.addEventListener('keydown', function(event) {
+
+      if (event.key === 'Enter') {
+
+        unlockButton.click();
+
+      }
+
+    });
+
+  }
+
+}
