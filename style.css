@@ -263,21 +263,18 @@ section {
 
 .continent-banners {
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   margin-bottom: 80px;
-  min-height: 620px;
 }
 
 .banner-card {
   position: relative;
   display: block;
-  min-height: 260px;
+  height: 300px;
   border-radius: 0;
   overflow: hidden;
   text-decoration: none;
-  background-size: cover;
-  background-position: center;
   box-shadow: var(--shadow-soft);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -289,34 +286,12 @@ section {
   box-shadow: var(--shadow-strong);
 }
 
-.banner-card:nth-child(1) {
-  grid-column: span 5;
-  grid-row: span 2;
-  min-height: 500px;
+.banner-card-coming-soon {
+  opacity: 0.85;
 }
 
-.banner-card:nth-child(2) {
-  grid-column: span 4;
-  grid-row: span 1;
-  min-height: 240px;
-}
-
-.banner-card:nth-child(3) {
-  grid-column: span 3;
-  grid-row: span 1;
-  min-height: 240px;
-}
-
-.banner-card:nth-child(4) {
-  grid-column: span 7;
-  grid-row: span 1;
-  min-height: 240px;
-}
-
-.banner-card:nth-child(5) {
-  grid-column: span 5;
-  grid-row: span 1;
-  min-height: 240px;
+.banner-card-coming-soon:hover {
+  opacity: 1;
 }
 
 .banner-overlay {
@@ -330,6 +305,10 @@ section {
   background: linear-gradient(180deg, rgba(11, 11, 11, 0.05), rgba(11, 11, 11, 0.85));
 }
 
+.banner-card-coming-soon .banner-overlay {
+  background: linear-gradient(180deg, rgba(11, 11, 11, 0.25), rgba(11, 11, 11, 0.85));
+}
+
 .banner-content {
   position: absolute;
   left: 0;
@@ -338,10 +317,6 @@ section {
   z-index: 2;
   padding: 22px 22px 24px;
   color: var(--text-light);
-}
-
-.banner-card:nth-child(1) .banner-content {
-  padding: 28px 26px 30px;
 }
 
 .banner-tag {
@@ -357,17 +332,18 @@ section {
   font-weight: 700;
 }
 
+.banner-tag-coming-soon {
+  background: rgba(198, 167, 106, 0.25);
+  border: 1px solid rgba(198, 167, 106, 0.4);
+}
+
 .banner-content h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: var(--font-serif);
   letter-spacing: -0.05em;
   line-height: 0.95;
   margin: 0 0 8px;
   text-transform: uppercase;
-}
-
-.banner-card:nth-child(1) .banner-content h3 {
-  font-size: clamp(2.4rem, 3vw, 4rem);
 }
 
 .banner-content p {
@@ -498,22 +474,7 @@ footer {
 
 @media (max-width: 1200px) {
   .continent-banners {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    min-height: auto;
-  }
-
-  .banner-card:nth-child(1),
-  .banner-card:nth-child(2),
-  .banner-card:nth-child(3),
-  .banner-card:nth-child(4),
-  .banner-card:nth-child(5) {
-    grid-column: span 3;
-    min-height: 240px;
-  }
-
-  .banner-card:nth-child(1) {
-    grid-column: span 6;
-    min-height: 420px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -556,18 +517,6 @@ footer {
 
   .continent-banners {
     grid-template-columns: 1fr;
-    gap: 12px;
-    min-height: auto;
-  }
-
-  .banner-card,
-  .banner-card:nth-child(1),
-  .banner-card:nth-child(2),
-  .banner-card:nth-child(3),
-  .banner-card:nth-child(4),
-  .banner-card:nth-child(5) {
-    grid-column: span 1;
-    min-height: 220px;
   }
 
   .hero {
@@ -623,9 +572,5 @@ footer {
 
   .banner-content h3 {
     font-size: 1.4rem;
-  }
-
-  .banner-card:nth-child(1) .banner-content h3 {
-    font-size: 1.8rem;
   }
 }
