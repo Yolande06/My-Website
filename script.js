@@ -1,6 +1,26 @@
 const burgerMenu = document.getElementById('burgerMenu');
 const navMenu = document.getElementById('navMenu');
 
+// =====================================
+// PROTECT THE TRAVEL GALLERY
+// =====================================
+
+if (
+  window.location.pathname.endsWith('index.html') ||
+  window.location.pathname === '/'
+) {
+
+  const galleryUnlocked =
+    sessionStorage.getItem('galleryUnlocked');
+
+  if (galleryUnlocked !== 'true') {
+
+    window.location.href = 'unlock.html';
+
+  }
+
+}
+
 if (burgerMenu && navMenu) {
   burgerMenu.addEventListener('click', () => {
     burgerMenu.classList.toggle('active');
