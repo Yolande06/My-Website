@@ -3,21 +3,31 @@
 // =====================================
 
 const puzzleWords = [
-  "beach",
-  "island",
-  "travel",
-  "camera",
-  "sunset",
-  "journey",
-  "adventure",
-  "passport",
-  "holiday",
-  "explore",
-  "mountain",
-  "ocean",
-  "tropical",
-  "wander",
-  "gallery"
+“Australia”,
+“New Zealand”,
+“Indonesia”,
+“Japan”,
+“England”,
+“Northern Ireland”,
+“Scotland”,
+“Wales”,
+“Ireland”,
+“Portugal”,
+“Spain”,
+“France”,
+“Monaco”,
+“Germany”,
+“Switzerland”,
+“Austria”,
+“Czech Republic”,
+“Italy”,
+“Croatia”,
+“Albania”,
+“Bulgaria”,
+“Greece”,
+“Canada”,
+“Montenegro”,
+“Netherlands”
 ];
 
 const correctWord =
